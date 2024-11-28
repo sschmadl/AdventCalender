@@ -24,10 +24,23 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '21'
+      - name: Cache Maven packages
+        uses: actions/cache@v3
+        with:
+          path: ~/.m2
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: ${{ runner.os }}-maven }}
+      - name: Download JavaFX SDK
+        run: curl -L -o javafx-sdk.zip https://download2.gluonhq.com/openjfx/21.0.1/openjfx-21.0.1_linux-x64_bin-sdk.zip
+      - name: Verify download
+        run: | 
+          if [ ! -f "javafx-sdk.zip" ]; then echo "Download failed" exit 1 fi
+      - name: Unzip JavaFX SDK
+        run: unzip javafx-sdk.zip
+      - name: Set JavaFX path
+        run: echo "PATH_TO_FX=$(pwd)/javafx-sdk-21.0.1/lib" >> $GITHUB_ENV
       - name: Build with Maven
-        run: |
-          mvn clean package
-        working-directory: . # Adjust if your `pom.xml` is in a subdirectory
+        run: mvn clean package
 
       - name: Create Executables Directory
         run: mkdir -p executables
