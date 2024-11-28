@@ -1,0 +1,43 @@
+name: Build and Deploy JavaFX App
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build JavaFX Application
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Set up JDK
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'openjdk'
+          java-version: '21' # JavaFX requires Java 11 or higher
+
+      - name: Build with Maven
+        run: |
+          mvn clean package
+        working-directory: . # Adjust if your `pom.xml` is in a subdirectory
+
+      - name: Create Executables Directory
+        run: mkdir -p executables
+
+      - name: Move Jar to Executables
+        run: |
+          mv target/*.jar executables/
+        working-directory: . # Adjust for Maven's output directory
+
+      - name: Upload Executables as Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: javafx-executables
+          path: executables/
