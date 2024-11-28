@@ -34,6 +34,8 @@ jobs:
       - name: Build with Maven
         run: |
           mvn clean package
+      - name: Run application
+        run: java -p target/app --add-modules javafx.controls,javafx.fxml
         working-directory: . # Adjust if your `pom.xml` is in a subdirectory
 
       - name: Create Executables Directory
