@@ -13,7 +13,7 @@ import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
 import java.util.stream.IntStream;
-//
+
 public class AdventCalender extends Application {
     private static final int NUM_BOXES = 24; // Number of boxes
     private static final String IMAGE_PATH_TEMPLATE = "images/image%d.png"; // Image path template
