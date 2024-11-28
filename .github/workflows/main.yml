@@ -20,7 +20,7 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v3
         with:
-          distribution: 'openjdk'
+          distribution: 'temurin'
           java-version: '21' # JavaFX requires Java 11 or higher
 
       - name: Build with Maven
