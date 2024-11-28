@@ -19,13 +19,6 @@ jobs:
         with:
           fetch-depth: 0 # Fetch full history to enable commits
 
-      - name: Download JavaFX SDK
-        run: curl -O https://gluonhq.com/download/javafx-21.0.1-sdk-linux-x64.zip
-      - name: Unzip JavaFX SDK
-        run: unzip javafx-21.0.1-sdk-linux-x64.zip
-      - name: Set JavaFX path
-        run: echo "PATH_TO_FX=$(pwd)/javafx-sdk-21.0.1/lib" >> $GITHUB_ENV
-
       - name: Set up JDK 21
         uses: actions/setup-java@v3
         with:
