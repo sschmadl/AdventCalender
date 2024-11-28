@@ -24,12 +24,6 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '21'
-      - name: Cache Maven packages
-        uses: actions/cache@v3
-        with:
-          path: ~/.m2
-          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
-          restore-keys: ${{ runner.os }}-maven }}
       - name: Download JavaFX SDK
         run: curl -L -o javafx-sdk.zip https://download2.gluonhq.com/openjfx/21.0.1/openjfx-21.0.1_linux-x64_bin-sdk.zip
       - name: Unzip JavaFX SDK
