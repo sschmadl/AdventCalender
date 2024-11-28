@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f10d7f57-75d5-475b-9d2b-5fae9920c099" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/htl/steyr/adventcalender/AdventCalender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/htl/steyr/adventcalender/images/image1.webp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/htl/steyr/adventcalender/HelloApplication.java" beforeDir="false" />
+    <list default="true" id="f10d7f57-75d5-475b-9d2b-5fae9920c099" name="Changes" comment="added launch()">
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +48,7 @@
     "Application.HelloApplication.executor": "Run",
     "Application.PictureBoxesApp.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Simon Schmadlbauer/OneDrive/Desktop/Schule/4Klasse/ITP2/AdventCalender/src/main/resources/htl/steyr/adventcalender/images",
     "node.js.detected.package.eslint": "true",
@@ -60,6 +56,9 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
@@ -89,11 +88,110 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1732779475173</updated>
-      <workItem from="1732779476541" duration="1165000" />
+      <workItem from="1732779476541" duration="3594000" />
     </task>
+    <task id="LOCAL-00001" summary="test AdventCalender +Workflow">
+      <option name="closed" value="true" />
+      <created>1732781388280</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1732781388280</updated>
+    </task>
+    <task id="LOCAL-00002" summary="changed main.yml">
+      <option name="closed" value="true" />
+      <created>1732781449282</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1732781449282</updated>
+    </task>
+    <task id="LOCAL-00003" summary="changed main.yml">
+      <option name="closed" value="true" />
+      <created>1732781541523</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1732781541523</updated>
+    </task>
+    <task id="LOCAL-00004" summary="changed main.yml">
+      <option name="closed" value="true" />
+      <created>1732781647774</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1732781647774</updated>
+    </task>
+    <task id="LOCAL-00005" summary="changed main.yml">
+      <option name="closed" value="true" />
+      <created>1732781930723</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1732781930723</updated>
+    </task>
+    <task id="LOCAL-00006" summary="changed main.yml">
+      <option name="closed" value="true" />
+      <created>1732781992814</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1732781992814</updated>
+    </task>
+    <task id="LOCAL-00007" summary="changed main.yml">
+      <option name="closed" value="true" />
+      <created>1732782099207</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1732782099207</updated>
+    </task>
+    <task id="LOCAL-00008" summary="changed pom.xml">
+      <option name="closed" value="true" />
+      <created>1732782452280</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1732782452280</updated>
+    </task>
+    <task id="LOCAL-00009" summary="changed pom.xml">
+      <option name="closed" value="true" />
+      <created>1732782596250</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1732782596250</updated>
+    </task>
+    <task id="LOCAL-00010" summary="added launch()">
+      <option name="closed" value="true" />
+      <created>1732782830934</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1732782830934</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test AdventCalender +Workflow" />
+    <MESSAGE value="changed main.yml" />
+    <MESSAGE value="changed pom.xml" />
+    <MESSAGE value="added launch()" />
+    <option name="LAST_COMMIT_MESSAGE" value="added launch()" />
   </component>
 </project>
