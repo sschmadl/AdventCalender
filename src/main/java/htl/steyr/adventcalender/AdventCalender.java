@@ -91,4 +91,8 @@ public class AdventCalender extends Application {
         imageStage.setScene(imageScene);
         imageStage.show();
     }
+
+    public static void main(String[] args) {
+        launch();
+    }
 }
