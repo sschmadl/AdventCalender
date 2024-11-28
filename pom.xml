@@ -58,6 +58,11 @@
             <!-- Default configuration for running with: mvn clean javafx:run -->
             <id>default-cli</id>
             <configuration>
+              <archive>
+                <manifestEntries>
+                  <Main-Class>htl.steyr.adventcalender.AdventCalender</Main-Class>
+                </manifestEntries>
+              </archive>
               <mainClass>htl.steyr.adventcalender/htl.steyr.adventcalender.AdventCalender</mainClass>
               <launcher>app</launcher>
               <jlinkZipName>app</jlinkZipName>
