@@ -1,27 +1,29 @@
-name: Build and Deploy JavaFX App
+name: Build, Deploy, and Commit JavaFX App
 
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
     branches:
-      - master
+      - main
 
 jobs:
   build:
-    name: Build JavaFX Application
+    name: Build, Deploy, and Commit JavaFX App
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout Code
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0 # Fetch full history to enable commits
 
-      - name: Set up JDK
+      - name: Set up JDK 21
         uses: actions/setup-java@v3
         with:
           distribution: 'temurin'
-          java-version: '21' # JavaFX requires Java 11 or higher
+          java-version: '21'
 
       - name: Build with Maven
         run: |
@@ -36,8 +38,13 @@ jobs:
           mv target/*.jar executables/
         working-directory: . # Adjust for Maven's output directory
 
-      - name: Upload Executables as Artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: javafx-executables
-          path: executables/
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit Executables
+        run: |
+          git add executables/
+          git commit -m "Add built artifact to executables folder [skip ci]"
+          git push
