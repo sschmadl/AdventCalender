@@ -20,7 +20,7 @@ jobs:
           fetch-depth: 0 # Fetch full history to enable commits
 
       - name: Download JavaFX SDK
-        run: wget https://gluonhq.com/download/javafx-21.0.1-sdk-linux-x64.zip
+        run: curl https://gluonhq.com/download/javafx-21.0.1-sdk-linux-x64.zip
       - name: Unzip JavaFX SDK
         run: unzip javafx-21.0.1-sdk-linux-x64.zip
       - name: Set JavaFX path
