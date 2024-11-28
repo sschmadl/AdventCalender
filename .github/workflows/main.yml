@@ -33,10 +33,7 @@ jobs:
           restore-keys: ${{ runner.os }}-maven }}
       - name: Build with Maven
         run: |
-          mvn clean javafx:jlink
           mvn clean package
-      - name: Run application
-        run: java -p target/app --add-modules javafx.controls,javafx.fxml -m htl.steyr.adventcalender/htl.steyr.adventcalender.AdventCalender
         working-directory: . # Adjust if your `pom.xml` is in a subdirectory
 
       - name: Create Executables Directory
