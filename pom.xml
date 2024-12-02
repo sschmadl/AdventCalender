@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>htl.steyr</groupId>
     <artifactId>AdventCalender</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <name>AdventCalender</name>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
