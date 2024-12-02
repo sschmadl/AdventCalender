@@ -44,7 +44,7 @@ public class AdventCalender extends Application {
 
         // Add buttons to the GridPane
         IntStream.range(1, NUM_BOXES + 1).forEach(i -> {
-            Button button = new Button("Box " + i);
+            Button button = new Button(""+i);
             button.setMaxSize(Double.MAX_VALUE, Double.MAX_VALUE); // Allow buttons to grow
             button.setOnAction(e -> openImageWindow(i)); // Set action to open image window
 
